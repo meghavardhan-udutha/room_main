@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+.container {
+    margin: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+}
+
+td {
+    background-color: #222;
+}
+
+.expense-category {
+    margin-bottom: 20px;
+}
+
+.expense-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.expense-category li {
+    margin: 5px 0;
+}
+
+.total-expenses {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}

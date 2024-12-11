@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Financial Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="expenses.html">Monthly Expenses</a></li>
+                <li><a href="calculator.html" target="_blank">Calculator</a></li>
+                <li><a href="meals.html">Meal Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Update Your Expenses</h1>
+
+        <!-- Room Expenses Table -->
+        <h2>Room Expenses</h2>
+        <table id="room-expenses">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Amount (₹)</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Entries will be added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="room-total">₹0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Combined Expenses Table -->
+        <h2>Combined Expenses</h2>
+        <table id="combined-expenses">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Amount (₹)</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Entries will be added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="combined-total">₹0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Food Expenses Table -->
+        <h2>Food Expenses</h2>
+        <table id="food-expenses">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Amount (₹)</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Entries will be added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="food-total">₹0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Mart Expenses Table -->
+        <h2>Mart Expenses</h2>
+        <table id="mart-expenses">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Amount (₹)</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Entries will be added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="mart-total">₹0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Form to Add Expense -->
+        <h2>Add New Expense</h2>
+        <form id="expense-form">
+            <label for="category">Category:</label>
+            <select id="category" required>
+                <option value="room">Room Expenses</option>
+                <option value="combined">Combined Expenses</option>
+                <option value="food">Food Expenses</option>
+                <option value="mart">Mart Expenses</option>
+            </select>
+
+            <label for="item">Item:</label>
+            <input type="text" id="item" required>
+
+            <label for="amount">Amount (₹):</label>
+            <input type="number" id="amount" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Add Expense</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
